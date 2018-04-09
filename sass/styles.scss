@@ -1,0 +1,64 @@
+@import "backgroundImages.scss";
+@import "variables.scss";
+@import "reset.scss";
+
+.home{
+  background-color: $lightGreen;
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+}
+
+.box{
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  margin-left: 5%;
+}
+
+.centerText{
+  text-align: center;
+  width: 100%;
+}
+
+.lrgFont{
+  font-size: 70px;
+}
+
+.xtraLrgFont{
+  font-size: 80px;
+}
+
+.absolutebottom{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 40px;
+}
+
+.absolutetop{
+  position: absolute;
+  top: 20vh;
+}
+
+.foodButton{
+  height: 40vh;
+  background-color: $lightGreen;
+  @include textShadowOne;
+}
+.drinksButton{
+  height: 40vh;
+  background-color: $darkGreen;
+  @include textShadowTwo;
+}
+.cartButton{
+  height: 20vh;
+  background-color: black;
+  // @include textShadowThree;
+}
+
+.flex{
+  display: flex;
+  align-items:center;
+}

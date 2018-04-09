@@ -1,0 +1,64 @@
+.logo {
+  background-image: url(../images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif; }
+
+.home {
+  background-color: #A6CD9E; }
+
+.container {
+  height: 100vh;
+  width: 100vw; }
+
+.box {
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  margin-left: 5%; }
+
+.centerText {
+  text-align: center;
+  width: 100%; }
+
+.lrgFont {
+  font-size: 70px; }
+
+.xtraLrgFont {
+  font-size: 80px; }
+
+.absolutebottom {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 40px; }
+
+.absolutetop {
+  position: absolute;
+  top: 20vh; }
+
+.foodButton {
+  height: 40vh;
+  background-color: #A6CD9E;
+  color: black;
+  text-shadow: 8px 8px #266242; }
+
+.drinksButton {
+  height: 40vh;
+  background-color: #266242;
+  color: #A6CD9E;
+  text-shadow: 8px 8px black; }
+
+.cartButton {
+  height: 20vh;
+  background-color: black; }
+
+.flex {
+  display: flex;
+  align-items: center; }
+
+/*# sourceMappingURL=styles.css.map */

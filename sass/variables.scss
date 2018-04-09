@@ -1,0 +1,15 @@
+$lightGreen: #A6CD9E;
+$darkGreen: #266242;
+
+@mixin textShadowOne {
+  color: black;
+  text-shadow: 8px 8px $darkGreen;
+}
+@mixin textShadowTwo {
+  color: $lightGreen;
+  text-shadow: 8px 8px black;
+}
+@mixin textShadowThree {
+  color: $lightGreen;
+  text-shadow: 8px 8px $darkGreen;
+}
