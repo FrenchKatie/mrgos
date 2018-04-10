@@ -6,6 +6,8 @@
   * a {
     text-decoration: none;
     color: black; }
+  * li {
+    list-style-type: none; }
 
 .logo {
   background-image: url(../images/logo.png);
@@ -16,10 +18,10 @@
   text-align: center;
   width: 100%; }
 
-.xtrasmlFont {
+.xtraSmlFont, .cartPrice, .cartNumber {
   font-size: 20px; }
 
-.smlFont {
+.smlFont, .viewOrder {
   font-size: 30px; }
 
 .medFont {
@@ -28,10 +30,13 @@
 .lrgFont {
   font-size: 70px; }
 
-.xtraLrgFont {
+.xLrgFont {
   font-size: 80px; }
 
-.lightGreenText {
+.xxLrgFont {
+  font-size: 110px; }
+
+.lightGreenText, .cartPrice, .cartNumber {
   color: #A6CD9E; }
 
 .darkGreenText {
@@ -60,17 +65,19 @@
   top: 20vh; }
 
 .menuButton {
-  height: 50vh; }
+  height: 45vh; }
 
 .foodButton {
   background-color: #A6CD9E;
   color: black;
-  text-shadow: 8px 8px #266242; }
+  text-shadow: 8px 8px #266242;
+  font-weight: 700; }
 
 .drinksButton {
   background-color: #266242;
   color: #A6CD9E !important;
-  text-shadow: 8px 8px black; }
+  text-shadow: 8px 8px black;
+  font-weight: 700; }
 
 .flex {
   display: flex;
@@ -87,7 +94,7 @@
   width: 75%;
   float: left; }
 
-.itemDiet {
+.itemPrice {
   width: 25%;
   float: right;
   text-align: right; }
@@ -97,12 +104,13 @@
 
 .header {
   position: fixed;
+  top: 0;
   width: 100vw;
   background-color: #A6CD9E; }
 
 .itemWrapper {
-  padding-top: 120px;
-  padding-bottom: 90px; }
+  margin-top: 120px;
+  margin-bottom: 90px; }
 
 .fixed {
   position: fixed;
@@ -119,13 +127,57 @@
 .menuItem {
   padding: 10px 0 10px 0; }
 
-.blackButton {
+.button, .blackButton {
   width: 100vw;
-  background-color: black;
-  padding: 20px; }
+  height: 10vh; }
 
-.blackButtonText {
+.blackButton {
+  background-color: black; }
+
+.blackButtonText, .viewOrder {
   color: #A6CD9E;
   text-shadow: 3px 3px #266242; }
+
+.cartPrice {
+  margin-top: 20px;
+  flex: 1;
+  display: inline-block; }
+
+.quantity, .cartNumber {
+  border: #A6CD9E 1px solid;
+  border-radius: 1px; }
+
+.cartNumber {
+  text-align: right;
+  padding: 5px 10px 5px 10px;
+  flex: 1;
+  display: inline-block; }
+
+.viewOrder {
+  flex: 2;
+  text-align: center;
+  display: inline-block;
+  margin: 0 40px 0 40px; }
+
+.exit {
+  margin: 20px 0 0 20px; }
+
+.productName {
+  margin: 20px 0 30px 0; }
+
+.productDescription {
+  margin-bottom: 20px; }
+
+.productDiet {
+  margin-bottom: 20px; }
+
+.productPrice {
+  margin-bottom: 20px; }
+
+.anchor {
+  display: block;
+  position: relative;
+  visibility: hidden;
+  top: -114px; }
 
 /*# sourceMappingURL=styles.css.map */

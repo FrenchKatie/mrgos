@@ -1,10 +1,15 @@
 $(document).ready(function(){
+
   $(".toggleMobNav").click(function(){
     $(".toggleSection").slideToggle();
-  })
-  navigation 
-  $(".toggleMobNav").click(function(){
+  });
+
+  $(".menuItem").click(function(){
     $(".toggleSection").slideToggle();
-    $(".toggleMobNav").toggleClass('fixed');
   })
+
+
+
+
+
 });

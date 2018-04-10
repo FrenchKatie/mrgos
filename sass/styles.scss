@@ -31,18 +31,21 @@
 }
 
 .menuButton{
-  height: 50vh;
+  height: 45vh;
 }
 
 .foodButton{
   background-color: $lightGreen;
   @include textShadowOne;
+  font-weight: 700;
 }
 
 .drinksButton{
   background-color: $darkGreen;
   @include textShadowTwo;
+  font-weight: 700;
 }
+
 .flex{
   display: flex;
   align-items:center;
@@ -62,7 +65,7 @@
   float: left;
 }
 
-.itemDiet{
+.itemPrice{
   width: 25%;
   float: right;
   text-align: right;
@@ -74,19 +77,21 @@
 
 .header{
   position: fixed;
+  top: 0;
   width: 100vw;
   background-color: $lightGreen;
 }
 
 .itemWrapper{
-  padding-top: 120px;
-  padding-bottom: 90px;
+  margin-top: 120px;
+  margin-bottom: 90px;
 }
 
 .fixed{
   position: fixed;
   top: 0;
 }
+
 .fixedBottom{
   position: fixed;
   bottom: 0;
@@ -102,11 +107,79 @@
   // border-top: 1px solid $darkGreen;
 }
 
-.blackButton{
+.button{
   width: 100vw;
-  background-color: black;
-  padding: 20px;
+  height: 10vh;
 }
+
+.blackButton{
+  @extend .button;
+  background-color: black;
+}
+
 .blackButtonText{
   @include textShadowThree;
+}
+
+.cartPrice{
+  @extend .lightGreenText;
+  @extend .xtraSmlFont;
+  margin-top: 20px;
+  flex:1;
+  display: inline-block;
+}
+
+.quantity{
+  border: $lightGreen 1px solid;
+  border-radius: 1px;
+}
+
+.cartNumber{
+  @extend .xtraSmlFont;
+  @extend .lightGreenText;
+  @extend .quantity;
+  text-align: right;
+  padding: 5px 10px 5px 10px;
+  flex:1;
+  display: inline-block;
+}
+
+.viewOrder{
+  @extend .blackButtonText;
+  @extend .smlFont;
+  flex: 2;
+  text-align: center;
+  display: inline-block;
+  margin: 0 40px 0 40px;
+}
+
+.exit{
+  margin: 20px 0 0 20px;
+}
+
+.productWrapper{
+
+}
+
+.productName{
+  margin: 20px 0 30px 0;
+}
+
+.productDescription{
+  margin-bottom: 20px;
+}
+
+.productDiet{
+  margin-bottom: 20px;
+}
+
+.productPrice{
+  margin-bottom: 20px;
+}
+
+.anchor{
+  display: block;
+  position: relative;
+  visibility: hidden;
+  top: -114px;
 }
