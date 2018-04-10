@@ -1,6 +1,7 @@
+@import "reset.scss";
 @import "backgroundImages.scss";
 @import "variables.scss";
-@import "reset.scss";
+@import "fontStyles.scss";
 
 .home{
   background-color: $lightGreen;
@@ -18,19 +19,6 @@
   margin-left: 5%;
 }
 
-.centerText{
-  text-align: center;
-  width: 100%;
-}
-
-.lrgFont{
-  font-size: 70px;
-}
-
-.xtraLrgFont{
-  font-size: 80px;
-}
-
 .absolutebottom{
   position: absolute;
   bottom: 0;
@@ -42,23 +30,83 @@
   top: 20vh;
 }
 
+.menuButton{
+  height: 50vh;
+}
+
 .foodButton{
-  height: 40vh;
   background-color: $lightGreen;
   @include textShadowOne;
 }
+
 .drinksButton{
-  height: 40vh;
   background-color: $darkGreen;
   @include textShadowTwo;
 }
-.cartButton{
-  height: 20vh;
-  background-color: black;
-  // @include textShadowThree;
-}
-
 .flex{
   display: flex;
   align-items:center;
+  justify-content: space-between;
+}
+
+.categoryName{
+  padding: 20px;
+}
+
+.item{
+    padding: 20px;
+}
+
+.itemInfo{
+  width: 75%;
+  float: left;
+}
+
+.itemDiet{
+  width: 25%;
+  float: right;
+  text-align: right;
+}
+
+.clear{
+  clear: both;
+}
+
+.header{
+  position: fixed;
+  width: 100vw;
+  background-color: $lightGreen;
+}
+
+.itemWrapper{
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+
+.fixed{
+  position: fixed;
+  top: 0;
+}
+.fixedBottom{
+  position: fixed;
+  bottom: 0;
+}
+
+.toggleSection{
+  display: none;
+  height: 100vh;
+}
+
+.menuItem{
+  padding: 10px 0 10px 0;
+  // border-top: 1px solid $darkGreen;
+}
+
+.blackButton{
+  width: 100vw;
+  background-color: black;
+  padding: 20px;
+}
+.blackButtonText{
+  @include textShadowThree;
 }

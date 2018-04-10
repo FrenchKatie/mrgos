@@ -1,13 +1,41 @@
-.logo {
-  background-image: url(../images/logo.png);
-  background-size: contain;
-  background-repeat: no-repeat; }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto Condensed', sans-serif; }
+  * a {
+    text-decoration: none;
+    color: black; }
+
+.logo {
+  background-image: url(../images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.centerText {
+  text-align: center;
+  width: 100%; }
+
+.xtrasmlFont {
+  font-size: 20px; }
+
+.smlFont {
+  font-size: 30px; }
+
+.medFont {
+  font-size: 40px; }
+
+.lrgFont {
+  font-size: 70px; }
+
+.xtraLrgFont {
+  font-size: 80px; }
+
+.lightGreenText {
+  color: #A6CD9E; }
+
+.darkGreenText {
+  color: #266242; }
 
 .home {
   background-color: #A6CD9E; }
@@ -22,16 +50,6 @@
   margin: auto;
   margin-left: 5%; }
 
-.centerText {
-  text-align: center;
-  width: 100%; }
-
-.lrgFont {
-  font-size: 70px; }
-
-.xtraLrgFont {
-  font-size: 80px; }
-
 .absolutebottom {
   position: absolute;
   bottom: 0;
@@ -41,24 +59,73 @@
   position: absolute;
   top: 20vh; }
 
+.menuButton {
+  height: 50vh; }
+
 .foodButton {
-  height: 40vh;
   background-color: #A6CD9E;
   color: black;
   text-shadow: 8px 8px #266242; }
 
 .drinksButton {
-  height: 40vh;
   background-color: #266242;
-  color: #A6CD9E;
+  color: #A6CD9E !important;
   text-shadow: 8px 8px black; }
-
-.cartButton {
-  height: 20vh;
-  background-color: black; }
 
 .flex {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-between; }
+
+.categoryName {
+  padding: 20px; }
+
+.item {
+  padding: 20px; }
+
+.itemInfo {
+  width: 75%;
+  float: left; }
+
+.itemDiet {
+  width: 25%;
+  float: right;
+  text-align: right; }
+
+.clear {
+  clear: both; }
+
+.header {
+  position: fixed;
+  width: 100vw;
+  background-color: #A6CD9E; }
+
+.itemWrapper {
+  padding-top: 120px;
+  padding-bottom: 90px; }
+
+.fixed {
+  position: fixed;
+  top: 0; }
+
+.fixedBottom {
+  position: fixed;
+  bottom: 0; }
+
+.toggleSection {
+  display: none;
+  height: 100vh; }
+
+.menuItem {
+  padding: 10px 0 10px 0; }
+
+.blackButton {
+  width: 100vw;
+  background-color: black;
+  padding: 20px; }
+
+.blackButtonText {
+  color: #A6CD9E;
+  text-shadow: 3px 3px #266242; }
 
 /*# sourceMappingURL=styles.css.map */
