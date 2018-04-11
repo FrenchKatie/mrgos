@@ -9,12 +9,37 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
   </head>
   <body>
-    <main class="home container">
-      <div class="logo box absolutetop"></div>
-      <div class="centerText absolutebottom">
-        <h1 class="lrgFont">LET'S EAT</h1>
-        <i class="lrgFont fas fa-chevron-circle-down"></i>
+    <main class="container">
+      <!-- LANDING HOME ELEMENT -->
+      <div class="home">
+        <div class="logo box absolutetop"></div>
+        <div class="centerText absolutebottom toggleme">
+          <h1 class="lrgFont">LET'S EAT</h1>
+          <!-- <a href="#homeSection2" class="toggleme"> -->
+            <i class="lrgFont fas fa-chevron-circle-down"></i>
+          <!-- </a> -->
+        </div>
       </div>
+      <!-- WHEN CLICKED SCROLL TO THIS ELEMENT -->
+
+      <div class="homeMenu slider">
+        <div class="menuButton foodButton flex">
+          <a class="centerText xxLrgFont" href="foodMenu.html">FOOD</a>
+        </div>
+        <div class="menuButton drinksButton flex ">
+          <a class="centerText drinksButton xxLrgFont" href="drinksMenu.html">DRINKS</a>
+        </div>
+        <div class="blackButton">
+          <a href="">
+            <ul class="centerText">
+              <li class="cartPrice">$48.00</li>
+              <li class="viewOrder">VIEW ORDER</li>
+              <li class="cartNumber">4</li>
+            </ul>
+          </a>
+        </div>
+      </div>
+
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
     </main>

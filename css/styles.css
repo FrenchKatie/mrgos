@@ -43,7 +43,24 @@
   color: #266242; }
 
 .home {
-  background-color: #A6CD9E; }
+  background-color: #A6CD9E;
+  height: 100vh;
+  position: relative;
+  overflow: hidden; }
+
+.homeMenu {
+  position: relative;
+  top: 100vh;
+  height: 100vh; }
+
+.slider {
+  overflow-y: hidden;
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1); }
+
+.slider.closed {
+  max-height: 0; }
 
 .container {
   height: 100vh;

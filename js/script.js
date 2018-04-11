@@ -6,8 +6,11 @@ $(document).ready(function(){
 
   $(".menuItem").click(function(){
     $(".toggleSection").slideToggle();
-  })
+  });
 
+  $(".toggleme").click(function(){
+    $(".slider").slideToggle();
+  });
 
 
 
