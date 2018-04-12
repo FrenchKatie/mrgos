@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAK;EACH,gBAAgB,EAAE,uBAAuB;EACzC,eAAe,EAAE,OAAO;EACxB,iBAAiB,EAAE,SAAS",
+"sources": ["../sass/backgroundImages.scss"],
+"names": [],
+"file": "backgroundImages.css"
+}

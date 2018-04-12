@@ -18,6 +18,15 @@
   text-align: center;
   width: 100%; }
 
+.lightGreenText, .cartPrice, .cartNumber {
+  color: #A6CD9E; }
+
+.darkGreenText {
+  color: #266242; }
+
+.greyText {
+  color: #808080; }
+
 .xtraSmlFont, .cartPrice, .cartNumber {
   font-size: 20px; }
 
@@ -36,12 +45,12 @@
 .xxLrgFont {
   font-size: 110px; }
 
-.lightGreenText, .cartPrice, .cartNumber {
-  color: #A6CD9E; }
-
-.darkGreenText {
-  color: #266242; }
-
+@media only screen and (min-width: 760px) {
+  .xxLrgFont {
+    font-size: 190px; } }
+@media only screen and (min-width: 1000px) {
+  .xxLrgFont {
+    font-size: 150px; } }
 .home {
   background-color: #A6CD9E;
   height: 100vh;
@@ -49,18 +58,7 @@
   overflow: hidden; }
 
 .homeMenu {
-  position: relative;
-  top: 100vh;
   height: 100vh; }
-
-.slider {
-  overflow-y: hidden;
-  transition-property: all;
-  transition-duration: .5s;
-  transition-timing-function: cubic-bezier(0, 1, 0.5, 1); }
-
-.slider.closed {
-  max-height: 0; }
 
 .container {
   height: 100vh;
@@ -108,11 +106,11 @@
   padding: 20px; }
 
 .itemInfo {
-  width: 75%;
+  width: 70%;
   float: left; }
 
 .itemPrice {
-  width: 25%;
+  width: 20%;
   float: right;
   text-align: right; }
 
@@ -196,5 +194,48 @@
   position: relative;
   visibility: hidden;
   top: -114px; }
+
+.specialIntructions {
+  width: 90%;
+  border: 1px grey solid;
+  resize: none;
+  padding: 10px; }
+
+.specialIntructions:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+  outline: 0 none; }
+
+.removeBox {
+  text-align: right; }
+
+.removeButton {
+  border: 1px solid #266242;
+  background-color: white;
+  padding: 5px 10px 5px 10px; }
+
+.itemQuantity {
+  border: 1px solid black;
+  padding: 5px 10px 5px 10px;
+  margin-right: 10%; }
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: white; }
+
+.orderTotal {
+  margin-bottom: 70px; }
+
+@media only screen and (min-width: 760px) {
+  .viewOrder {
+    margin: 0 100px 0 100px; }
+
+  .anchor {
+    top: -110px; } }
+@media only screen and (min-width: 1000px) {
+  .desktopContainer {
+    width: 80%;
+    margin: auto; } }
 
 /*# sourceMappingURL=styles.css.map */

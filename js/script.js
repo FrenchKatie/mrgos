@@ -8,11 +8,8 @@ $(document).ready(function(){
     $(".toggleSection").slideToggle();
   });
 
-  $(".toggleme").click(function(){
-    $(".slider").slideToggle();
-  });
-
-
-
+  // $(".toggleme").click(function(){
+  //   $(".open").slideToggle();
+  // });
 
 });

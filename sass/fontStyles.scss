@@ -3,6 +3,17 @@
   width: 100%;
 }
 
+.lightGreenText{
+  color: $lightGreen;
+}
+.darkGreenText{
+  color: $darkGreen;
+}
+
+.greyText{
+  color: $grey;
+}
+
 .xtraSmlFont{
   font-size: 20px;
 }
@@ -26,10 +37,26 @@
   font-size: 110px;
 }
 
-.lightGreenText{
-  color: $lightGreen;
+
+
+@media only screen and (min-width:760px){
+
+
+  .xxLrgFont{
+    font-size: 190px;
+  }
 }
 
-.darkGreenText{
-  color: $darkGreen;
+@media only screen and (min-width:1000px){
+  // .medFont{
+  //   font-size: 60px;
+  // }
+  //
+  // .lrgFont{
+  //   font-size: 90px;
+  // }
+  //
+  .xxLrgFont{
+    font-size: 150px;
+  }
 }

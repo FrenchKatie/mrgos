@@ -1,6 +1,6 @@
 $lightGreen: #A6CD9E;
 $darkGreen: #266242;
-
+$grey: #808080;
 @mixin textShadowOne {
   color: black;
   text-shadow: 8px 8px $darkGreen;
@@ -13,5 +13,3 @@ $darkGreen: #266242;
   color: $lightGreen;
   text-shadow: 3px 3px $darkGreen;
 }
-
-  
