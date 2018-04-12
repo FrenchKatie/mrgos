@@ -12,7 +12,8 @@
 .logo {
   background-image: url(../images/logo.png);
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .centerText {
   text-align: center;
@@ -46,8 +47,15 @@
   font-size: 110px; }
 
 @media only screen and (min-width: 760px) {
+  .xtraSmlFont, .cartPrice, .cartNumber {
+    font-size: 27px; }
+
   .xxLrgFont {
-    font-size: 190px; } }
+    font-size: 190px; }
+
+  .productWrapper {
+    width: 80%;
+    margin: auto; } }
 @media only screen and (min-width: 1000px) {
   .xxLrgFont {
     font-size: 150px; } }
@@ -57,23 +65,28 @@
   position: relative;
   overflow: hidden; }
 
-.homeMenu {
-  height: 100vh; }
-
 .container {
   height: 100vh;
   width: 100vw; }
 
+.homeMenu {
+  height: 100vh; }
+
 .box {
-  width: 90%;
+  width: 100%;
   height: 500px;
+  top: 20vh;
+  position: relative; }
+
+.homeSection1 {
   margin: auto;
-  margin-left: 5%; }
+  width: 90%; }
 
 .absolutebottom {
   position: absolute;
   bottom: 0;
-  margin-bottom: 40px; }
+  left: 0;
+  margin-bottom: 10px; }
 
 .absolutetop {
   position: absolute;
@@ -124,8 +137,7 @@
   background-color: #A6CD9E; }
 
 .itemWrapper {
-  margin-top: 120px;
-  margin-bottom: 90px; }
+  margin-top: 120px; }
 
 .fixed {
   position: fixed;
@@ -175,10 +187,10 @@
   margin: 0 40px 0 40px; }
 
 .exit {
-  margin: 20px 0 0 20px; }
+  margin: 20px 0px 0px 20px; }
 
 .productName {
-  margin: 20px 0 30px 0; }
+  margin: 30px; }
 
 .productDescription {
   margin-bottom: 20px; }
@@ -197,9 +209,9 @@
 
 .specialIntructions {
   width: 90%;
-  border: 1px grey solid;
   resize: none;
-  padding: 10px; }
+  padding: 10px;
+  border: 1px grey solid; }
 
 .specialIntructions:focus {
   border-color: rgba(82, 168, 236, 0.8);
@@ -224,18 +236,52 @@
   top: 0;
   background-color: white; }
 
-.orderTotal {
-  margin-bottom: 70px; }
+.specialIntructions {
+  margin-top: 20px;
+  font-size: 18px; }
+
+.quantityButton {
+  background-color: #A6CD9E;
+  color: #266242;
+  width: 60px;
+  height: 60px; }
+
+.quantitySelect {
+  width: 80px;
+  text-align: center;
+  margin: 0; }
+
+.quantityEdit {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+
+.empty {
+  height: 12vh; }
+
+.emptyTop {
+  height: 5vh; }
 
 @media only screen and (min-width: 760px) {
   .viewOrder {
     margin: 0 100px 0 100px; }
 
   .anchor {
-    top: -110px; } }
+    top: -110px; }
+
+  .specialIntructions {
+    width: 60%; } }
 @media only screen and (min-width: 1000px) {
   .desktopContainer {
     width: 80%;
-    margin: auto; } }
+    margin: auto; }
+
+  .homeSection1 {
+    margin: auto;
+    width: 60%; }
+
+  .absolutebottom {
+    margin-bottom: 20px; } }
 
 /*# sourceMappingURL=styles.css.map */

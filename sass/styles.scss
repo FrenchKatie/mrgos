@@ -9,30 +9,31 @@
   position: relative;
   overflow: hidden;
 }
-
-.homeMenu{
-  // position: relative;
-  // top: 100vh;
-  height: 100vh;
-}
-
-
 .container{
   height: 100vh;
   width: 100vw;
 }
+.homeMenu{
+  height: 100vh;
+}
 
 .box{
-  width: 90%;
+  width: 100%;
   height: 500px;
+  top: 20vh;
+  position: relative;
+}
+
+.homeSection1{
   margin: auto;
-  margin-left: 5%;
+  width: 90%;
 }
 
 .absolutebottom{
   position: absolute;
   bottom: 0;
-  margin-bottom: 40px;
+  left: 0;
+  margin-bottom: 10px;
 }
 
 .absolutetop{
@@ -94,7 +95,7 @@
 
 .itemWrapper{
   margin-top: 120px;
-  margin-bottom: 90px;
+  // margin-bottom: 90px;
 }
 
 .fixed{
@@ -121,7 +122,6 @@
   width: 100vw;
   height: 10vh;
 }
-
 
 .blackButton{
   @extend .button;
@@ -165,11 +165,11 @@
 }
 
 .exit{
-  margin: 20px 0 0 20px;
+  margin: 20px 0px 0px 20px;
 }
 
 .productName{
-  margin: 20px 0 30px 0;
+  margin: 30px;
 }
 
 .productDescription{
@@ -193,27 +193,31 @@
 
 .specialIntructions{
   width: 90%;
-  border: 1px grey solid;
   resize: none;
   padding: 10px;
+  border: 1px grey solid;
 }
+
 .specialIntructions:focus{
   border-color: rgba(82, 168, 236, 0.8);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
-    outline: 0 none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+  outline: 0 none;
 }
 
 .removeBox{
   text-align: right;
 }
+
 .removeButton{
   border: 1px solid $darkGreen;
   background-color: white;
+
   padding: 5px 10px 5px 10px;
 }
 
 .itemQuantity{
   border: 1px solid black;
+
   padding: 5px 10px 5px 10px;
   margin-right: 10%;
 }
@@ -221,13 +225,94 @@
 .sticky{
   position: sticky;
   top: 0;
+
   background-color: white;
 }
 
-.orderTotal{
-  margin-bottom: 70px;
+.specialIntructions{
+    margin-top: 20px;
+    font-size: 18px;
 }
 
+.quantityButton{
+  background-color: $lightGreen;
+  color: $darkGreen;
+
+  width: 60px;
+  height: 60px;
+}
+
+.quantitySelect{
+  width: 80px;
+  text-align: center;
+  margin: 0;
+}
+
+.quantityEdit{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.empty{
+  height: 12vh;
+}
+
+.emptyTop{
+  height: 5vh;
+}
+
+// ONLY COMPLETE THIS POP UP IF YOU HAVE TIME
+// #go {
+//   position: absolute;
+//   top: 30px;
+//   left: 50%;
+//   transform: translate(-50%, 0%);
+//   color: white;
+//   border: 0;
+//   background: #71c341;
+//   width: 100px;
+//   height: 30px;
+//   border-radius: 6px;
+//   font-size: 1rem;
+//   transition: background 0.2s ease;
+//   outline: none;
+// }
+//
+// .message #ok {
+//   position: relative;
+//   color: white;
+//   border: 0;
+//   background: #71c341;
+//   width: 100%;
+//   height: 50px;
+//   border-radius: 6px;
+//   font-size: 1.2rem;
+//   transition: background 0.2s ease;
+//   outline: none;
+// }
+//
+// .message {
+//   position: absolute;
+//   top: -200px;
+//   left: 50%;
+//   transform: translate(-50%, 0%);
+//   width: 300px;
+//   background: white;
+//   border-radius: 8px;
+//   padding: 30px;
+//   text-align: center;
+//   font-weight: 300;
+//   color: #2c2928;
+//   opacity: 0;
+//   transition: top 0.3s cubic-bezier(0.31, 0.25, 0.5, 1.5), opacity 0.2s ease-in-out;
+// }
+//
+// .comein {
+//   top: 150px;
+//   opacity: 1;
+// }
 
 
 @media only screen and (min-width:760px){
@@ -237,13 +322,23 @@
   .anchor{
     top: -110px;
   }
-
+  .specialIntructions{
+    width: 60%;
+  }
 }
 
 @media only screen and (min-width:1000px){
   .desktopContainer{
     width: 80%;
     margin:auto;
+  }
+  .homeSection1{
+    margin: auto;
+    width: 60%;
+  }
+  .absolutebottom{
+
+    margin-bottom: 20px;
   }
   .anchor{
     // top: -150px;

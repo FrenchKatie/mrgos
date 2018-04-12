@@ -40,22 +40,24 @@
 
 
 @media only screen and (min-width:760px){
-
+  .xtraSmlFont{
+    font-size: 27px;
+  }
 
   .xxLrgFont{
     font-size: 190px;
   }
+  .productWrapper{
+    width: 80%;
+    margin: auto;
+  }
 }
 
 @media only screen and (min-width:1000px){
-  // .medFont{
-  //   font-size: 60px;
+  // .smlFont{
+  //   font-size: 35px;
+  //   font-weight: 900;
   // }
-  //
-  // .lrgFont{
-  //   font-size: 90px;
-  // }
-  //
   .xxLrgFont{
     font-size: 150px;
   }

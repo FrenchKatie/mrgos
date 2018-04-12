@@ -9,27 +9,46 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
   </head>
   <body>
-    <main class="productWrapper ">
+    <main class=" ">
       <a href="foodMenu.html"><i class="fas fa-times lrgFont exit"></i></a>
-
-      <div class="centerText">
-
+      <div class="centerText productWrapper">
         <h1 class="blackButtonText medFont productName">TOFU GUA BAO</h1>
         <p class="xtraSmlFont productDescription">Marinated crispy tofu, pickled ginger, fried shallot, cos, chilli sauce</p>
         <p class="xtraSmlFont productDiet">[VEGETARIAN]</p>
         <p class="xtraSmlFont productPrice">$16.00</p>
-
         <h2 class="xtraSmlFont">SPECIAL COOKING INSTRUCTIONS:</h2>
-
-        <form class="" action="index.html" method="post">
-          <textarea name="specialIntructions" class="specialIntructions xtrasmlFont" placeholder="Add a note (extra sauce, no onions, etc)..." rows="8" cols="80"></textarea>
-
+        <form class="" action="index.html" method="post" class="">
+          <textarea name="specialIntructions" class="specialIntructions " placeholder="Add a note (extra sauce, no onions, etc)..." rows="8" cols="80"></textarea>
+          <br>
+          <div class="quantityEdit">
+            <label for="htop"></label>
+            <input class="medFont quantityButton"type="button" id="decrease" value="-" />
+            <input class="medFont quantitySelect"type="text" id="htop" value="1" />
+            <input class="smlFont quantityButton"type="button" id="increase" value="+" />
+          </div>
         </form>
       </div>
 
+      <!-- ONLY COMPLETE THIS POP UP IF YOU HAVE TIME! -->
+
+      <!-- <button id='go'>
+        ADD TO CART
+      </button>
+      <div class='message'>
+        <p>SUCCESS!</p>
+        <p>Item has been added to your cart</p>
+        <button id='ok'>
+          RETURN TO FOOD MENU
+        </button>
+        <button id='ok'>
+          VIEW YOUR ORDER
+        </button>
+      </div> -->
+
       <div class="centerText blackButton fixedBottom">
-        <a class="blackButtonText medFont" href="#">ADD TO CART</a>
+        <a class="blackButtonText medFont go" href="#">ADD TO CART</a>
       </div>
+      <div class="empty"></div>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
