@@ -41,7 +41,10 @@
 
 @media only screen and (min-width:760px){
   .xtraSmlFont{
-    font-size: 27px;
+    font-size: 25px;
+  }
+  .smlFont{
+    font-size: 40px;
   }
 
   .xxLrgFont{
@@ -54,10 +57,6 @@
 }
 
 @media only screen and (min-width:1000px){
-  // .smlFont{
-  //   font-size: 35px;
-  //   font-weight: 900;
-  // }
   .xxLrgFont{
     font-size: 150px;
   }

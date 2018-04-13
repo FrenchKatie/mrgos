@@ -13,18 +13,18 @@
       <a href="foodMenu.html"><i class="fas fa-times lrgFont exit"></i></a>
       <div class="centerText productWrapper">
         <h1 class="blackButtonText medFont productName">TOFU GUA BAO</h1>
-        <p class="xtraSmlFont productDescription">Marinated crispy tofu, pickled ginger, fried shallot, cos, chilli sauce</p>
-        <p class="xtraSmlFont productDiet">[VEGETARIAN]</p>
-        <p class="xtraSmlFont productPrice">$16.00</p>
-        <h2 class="xtraSmlFont">SPECIAL COOKING INSTRUCTIONS:</h2>
-        <form class="" action="index.html" method="post" class="">
+        <p class="xtraSmlFont bottomSpace">Marinated crispy tofu, pickled ginger, fried shallot, cos, chilli sauce</p>
+        <p class="xtraSmlFont bottomSpace">[VEGETARIAN]</p>
+        <p class="xtraSmlFont bottomSpace">$16.00</p>
+        <h2 class="xtraSmlFont bottomSpace">SPECIAL COOKING INSTRUCTIONS:</h2>
+        <form action="index.html" method="post">
           <textarea name="specialIntructions" class="specialIntructions " placeholder="Add a note (extra sauce, no onions, etc)..." rows="8" cols="80"></textarea>
           <br>
           <div class="quantityEdit">
             <label for="htop"></label>
-            <input class="medFont quantityButton"type="button" id="decrease" value="-" />
-            <input class="medFont quantitySelect"type="text" id="htop" value="1" />
-            <input class="smlFont quantityButton"type="button" id="increase" value="+" />
+            <input class="medFont quantityButton background darkGreenText" type="button" id="decrease" value="-" onclick="if(this.form.name.value>1){this.form.name.value--};"/>
+            <input class="medFont quantitySelect" type="text" name="name" id="htop" value="1" onchange="if(this.value<1){this.value=1}"/>
+            <input class="smlFont quantityButton background darkGreenText" type="button" id="increase" value="+"  onclick="if(this.form.name.value>=1){this.form.name.value++;}"/>
           </div>
         </form>
       </div>

@@ -48,7 +48,10 @@
 
 @media only screen and (min-width: 760px) {
   .xtraSmlFont, .cartPrice, .cartNumber {
-    font-size: 27px; }
+    font-size: 25px; }
+
+  .smlFont, .viewOrder {
+    font-size: 40px; }
 
   .xxLrgFont {
     font-size: 190px; }
@@ -59,18 +62,20 @@
 @media only screen and (min-width: 1000px) {
   .xxLrgFont {
     font-size: 150px; } }
+.background {
+  background-color: #A6CD9E; }
+
+.backgroundWhite {
+  background-color: white; }
+
 .home {
-  background-color: #A6CD9E;
   height: 100vh;
   position: relative;
   overflow: hidden; }
 
-.container {
+.fillScreen {
   height: 100vh;
   width: 100vw; }
-
-.homeMenu {
-  height: 100vh; }
 
 .box {
   width: 100%;
@@ -96,7 +101,6 @@
   height: 45vh; }
 
 .foodButton {
-  background-color: #A6CD9E;
   color: black;
   text-shadow: 8px 8px #266242;
   font-weight: 700; }
@@ -111,9 +115,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between; }
-
-.categoryName {
-  padding: 20px; }
 
 .item {
   padding: 20px; }
@@ -133,8 +134,7 @@
 .header {
   position: fixed;
   top: 0;
-  width: 100vw;
-  background-color: #A6CD9E; }
+  width: 100vw; }
 
 .itemWrapper {
   margin-top: 120px; }
@@ -192,13 +192,7 @@
 .productName {
   margin: 30px; }
 
-.productDescription {
-  margin-bottom: 20px; }
-
-.productDiet {
-  margin-bottom: 20px; }
-
-.productPrice {
+.bottomSpace {
   margin-bottom: 20px; }
 
 .anchor {
@@ -210,8 +204,7 @@
 .specialIntructions {
   width: 90%;
   resize: none;
-  padding: 10px;
-  border: 1px grey solid; }
+  padding: 10px; }
 
 .specialIntructions:focus {
   border-color: rgba(82, 168, 236, 0.8);
@@ -222,27 +215,22 @@
   text-align: right; }
 
 .removeButton {
-  border: 1px solid #266242;
-  background-color: white;
-  padding: 5px 10px 5px 10px; }
+  border: 1px solid #266242; }
 
 .itemQuantity {
-  border: 1px solid black;
-  padding: 5px 10px 5px 10px;
-  margin-right: 10%; }
+  border: 1px solid black; }
+
+.outlinePadding {
+  padding: 5px 10px 5px 10px; }
 
 .sticky {
   position: sticky;
-  top: 0;
-  background-color: white; }
+  top: 0; }
 
 .specialIntructions {
-  margin-top: 20px;
   font-size: 18px; }
 
 .quantityButton {
-  background-color: #A6CD9E;
-  color: #266242;
   width: 60px;
   height: 60px; }
 
@@ -268,12 +256,12 @@
     margin: 0 100px 0 100px; }
 
   .anchor {
-    top: -110px; }
+    top: -150px; }
 
   .specialIntructions {
     width: 60%; } }
 @media only screen and (min-width: 1000px) {
-  .desktopContainer {
+  .desktopfillScreen {
     width: 80%;
     margin: auto; }
 
