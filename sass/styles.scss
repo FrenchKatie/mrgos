@@ -25,7 +25,7 @@
 .box{
   width: 100%;
   height: 500px;
-  top: 20vh;
+  top: 15vh;
   position: relative;
 }
 
@@ -244,55 +244,42 @@
 }
 
 // ONLY COMPLETE THIS POP UP IF YOU HAVE TIME
-// #go {
-//   position: absolute;
-//   top: 30px;
-//   left: 50%;
-//   transform: translate(-50%, 0%);
-//   color: white;
-//   border: 0;
-//   background: #71c341;
-//   width: 100px;
-//   height: 30px;
-//   border-radius: 6px;
-//   font-size: 1rem;
-//   transition: background 0.2s ease;
-//   outline: none;
-// }
-//
-// .message #ok {
-//   position: relative;
-//   color: white;
-//   border: 0;
-//   background: #71c341;
-//   width: 100%;
-//   height: 50px;
-//   border-radius: 6px;
-//   font-size: 1.2rem;
-//   transition: background 0.2s ease;
-//   outline: none;
-// }
-//
-// .message {
-//   position: absolute;
-//   top: -200px;
-//   left: 50%;
-//   transform: translate(-50%, 0%);
-//   width: 300px;
-//   background: white;
-//   border-radius: 8px;
-//   padding: 30px;
-//   text-align: center;
-//   font-weight: 300;
-//   color: #2c2928;
-//   opacity: 0;
-//   transition: top 0.3s cubic-bezier(0.31, 0.25, 0.5, 1.5), opacity 0.2s ease-in-out;
-// }
-//
-// .comein {
-//   top: 150px;
-//   opacity: 1;
-// }
+#go {
+  transform: translate(-50%, 0%);
+  transition: background 0.2s ease;
+}
+
+.message #ok {
+  position: relative;
+  color: white;
+  border: 0;
+  margin-top: 20px;
+  background: black;
+  width: 50%;
+  height: 50px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+  outline: none;
+}
+
+.message {
+  padding: 20px;
+  position: absolute;
+  width: 80vw;
+  height: 60vh;
+  top: -200px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: $lightGreen;
+  border-radius: 8px;
+  opacity: 0;
+  transition: top 0.3s cubic-bezier(0.31, 0.25, 0.5, 1.5), opacity 0.2s ease-in-out;
+}
+
+.comein {
+  top: 150px;
+  opacity: 1;
+}
 
 
 @media only screen and (min-width:760px){
@@ -305,12 +292,19 @@
   .specialIntructions{
     width: 60%;
   }
+  .box{
+    // top: 20px;
+    width: 80%;
+    margin: auto;
+  }
 }
 
 @media only screen and (min-width:1000px){
+
   .desktopfillScreen{
     width: 80%;
     margin:auto;
+
   }
   .homeSection1{
     margin: auto;
@@ -319,5 +313,6 @@
   .absolutebottom{
     margin-bottom: 20px;
   }
+
 
 }
