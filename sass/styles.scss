@@ -3,8 +3,12 @@
 @import "variables.scss";
 @import "fontStyles.scss";
 
-.background{
+.lightGreenBackground{
   background-color: $lightGreen;
+}
+
+.darkGreenBackground{
+  background-color: $darkGreen;
 }
 
 .backgroundWhite{
@@ -162,8 +166,10 @@
 }
 
 .exit{
-  margin: 20px 0px 0px 20px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
+
 
 .productName{
   margin: 30px;
@@ -184,6 +190,7 @@
   width: 90%;
   resize: none;
   padding: 10px;
+  border: 1px solid grey;
 }
 
 .specialIntructions:focus{
@@ -198,6 +205,7 @@
 
 .removeButton{
   border: 1px solid $darkGreen;
+  background-color: white;
 }
 
 .itemQuantity{
@@ -243,7 +251,7 @@
   height: 5vh;
 }
 
-// ONLY COMPLETE THIS POP UP IF YOU HAVE TIME
+
 #go {
   transform: translate(-50%, 0%);
   transition: background 0.2s ease;
@@ -267,7 +275,7 @@
   position: absolute;
   width: 80vw;
   height: 60vh;
-  top: -200px;
+  top: -600px;
   left: 50%;
   transform: translate(-50%, 0%);
   background-color: $lightGreen;
@@ -301,9 +309,9 @@
 
 @media only screen and (min-width:1000px){
 
-  .desktopfillScreen{
-    width: 80%;
-    margin:auto;
+  .desktopContainer{
+    max-width: 70vw;
+    margin: 0 auto;
 
   }
   .homeSection1{
@@ -313,6 +321,12 @@
   .absolutebottom{
     margin-bottom: 20px;
   }
-
+  .emptyTop{
+    height: 15vh;
+  }
+  .productExit{
+    margin-top: 20px;
+    margin-left: 30vw;
+  }
 
 }

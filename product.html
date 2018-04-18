@@ -10,32 +10,28 @@
   </head>
   <body>
     <main>
-      <a href="foodMenu.html"><i class="fas fa-times lrgFont exit"></i></a>
-      <div class="centerText productWrapper">
-        <h1 class="blackButtonText medFont productName">TOFU GUA BAO</h1>
-        <p class="xtraSmlFont bottomSpace">Marinated crispy tofu, pickled ginger, fried shallot, cos, chilli sauce</p>
-        <p class="xtraSmlFont bottomSpace">[VEGETARIAN]</p>
-        <p class="xtraSmlFont bottomSpace">$16.00</p>
-        <h2 class="xtraSmlFont bottomSpace">SPECIAL COOKING INSTRUCTIONS:</h2>
-        <form action="index.html" method="post">
-          <textarea name="specialIntructions" class="specialIntructions" placeholder="Add a note (extra sauce, no onions, etc)..." rows="8" cols="80"></textarea>
-          <br>
-          <div class="quantityEdit">
-            <label for="htop"></label>
-            <input class="medFont quantityButton background darkGreenText" type="button" id="decrease" value="-" onclick="if(this.form.name.value>1){this.form.name.value--};"/>
-            <input class="medFont quantitySelect" type="text" name="name" id="htop" value="1" onchange="if(this.value<1){this.value=1}"/>
-            <input class="smlFont quantityButton background darkGreenText" type="button" id="increase" value="+"  onclick="if(this.form.name.value>=1){this.form.name.value++;}"/>
-          </div>
-        </form>
+      <a href="foodMenu.html"><i class="fas fa-times lrgFont exit productExit"></i></a>
+
+      <div class="desktopContainer">
+        <div class="centerText productWrapper item">
+          <h1 class="blackButtonText medFont productName">TOFU GUA BAO</h1>
+          <h2 class="cap darkGreenText bottomSpace">$6.00 Gua-Bao of the week!</h2>
+          <p class="xtraSmlFont bottomSpace">Marinated crispy tofu, pickled ginger, fried shallot, cos, chilli sauce</p>
+          <h2 class="xtraSmlFont bottomSpace">[VEGETARIAN]</h2>
+          <h2 class="xtraSmlFont bottomSpace">$6.00</h2>
+          <h2 class="xtraSmlFont bottomSpace">SPECIAL COOKING INSTRUCTIONS:</h2>
+          <form action="index.html" method="post">
+            <textarea name="specialIntructions" class="specialIntructions" placeholder="Add a note (extra sauce, no onions, etc)..." rows="8" cols="80"></textarea>
+            <br>
+            <div class="quantityEdit">
+              <label for="htop"></label>
+              <input class="medFont quantityButton lightGreenBackground darkGreenText" type="button" id="decrease" value="-" onclick="if(this.form.name.value>1){this.form.name.value--};"/>
+              <input class="medFont quantitySelect" type="text" name="name" id="htop" value="1" onchange="if(this.value<1){this.value=1}"/>
+              <input class="smlFont quantityButton lightGreenBackground darkGreenText" type="button" id="increase" value="+"  onclick="if(this.form.name.value>=1){this.form.name.value++;}"/>
+            </div>
+          </form>
+        </div>
       </div>
-
-      <!-- ONLY COMPLETE THIS POP UP IF YOU HAVE TIME! -->
-
-      <!-- <button id='go'>
-        ADD TO CART
-      </button> -->
-
-
       <div class="centerText blackButton fixedBottom">
         <a class="blackButtonText medFont go" id="go" href="#">ADD TO CART</a>
       </div>
